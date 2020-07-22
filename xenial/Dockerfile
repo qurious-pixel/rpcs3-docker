@@ -28,6 +28,8 @@ RUN \
 	libwayland-dev libwayland-cursor0 libwayland-client0 libwayland-server0 \
 	desktop-file-utils dput gnupg pbuilder ubuntu-dev-tools apt-file \
 	qt${QTVERMIN}-meta-minimal qt${QTVERMIN}svg && \
+	python python-pip python-setuptools \
+	pip install conan && \
 	apt-get install --only-upgrade dpkg
 	
 RUN \
